@@ -73,38 +73,61 @@
     <p>Cada día enviamos análisis exclusivos con alto porcentaje de acierto.</p>
     <a href="https://wa.link/t0mzsb"><button>🔥 QUIERO UNIRME A HORIZON BETS VIP</button></a>
   </section>  
-  <section id="galeria" style="background-color:#000; padding:40px 0; text-align:center; color:white;">
+ <section id="galeria" style="background-color:#000; padding:48px 0; text-align:center; color:white;">
   <h2 style="font-size:28px; color:#FFD700; margin-bottom:20px;">🔥 Nuestras Ganancias Reales 🔥</h2>
-  <div style="max-width:800px; margin:auto; position:relative;">
-    <div id="slider" style="overflow:hidden; border-radius:20px;">
-      <div id="slides" style="display:flex; transition:transform 0.5s ease-in-out;">
-        <img src="https://files.catbox.moe/7eq9i0.jpeg" style="width:100%; border-radius:20px;">
-        <img src="https://files.catbox.moe/ldg6k7.jpeg" style="width:100%; border-radius:20px;">
-        <img src="https://files.catbox.moe/9d0bdq.jpeg" style="width:100%; border-radius:20px;">
-        <img src="https://files.catbox.moe/bf6uqp.jpeg" style="width:100%; border-radius:20px;">
-        <img src="https://files.catbox.moe/gwv43d.jpeg" style="width:100%; border-radius:20px;">
-        <img src="https://files.catbox.moe/ugfy4k.jpeg" style="width:100%; border-radius:20px;">
-        <img src="https://files.catbox.moe/3eq7f1.jpeg" style="width:100%; border-radius:20px;">
-        <img src="https://files.catbox.moe/x2c2b3.jpeg" style="width:100%; border-radius:20px;">
-        <img src="https://files.catbox.moe/vxkzph.jpeg" style="width:100%; border-radius:20px;">
-        <img src="https://files.catbox.moe/mchvuk.jpeg" style="width:100%; border-radius:20px;">
+
+  <div style="max-width:900px; margin:auto; overflow:hidden; position:relative; border-radius:20px;">
+    <div id="slides" style="display:flex; transition:transform 0.8s ease-in-out;">
+
+      <!-- IMAGEN 1 -->
+      <div style="position:relative; flex:0 0 100%;">
+        <img src="https://raw.githubusercontent.com/gonzalezreinaldo081-prog/horizon-bets-vip/main/WhatsApp%20Image%202025-10-17%20at%2016.54.42.jpeg" style="width:100%; border-radius:20px; transition:transform 3s ease;"/>
+        <div style="position:absolute; bottom:10%; left:0; right:0; color:white; font-weight:bold; text-shadow:0 0 10px black; font-size:22px;">💰 $53.788 Ganado 🔥</div>
       </div>
+
+      <!-- IMAGEN 2 -->
+      <div style="position:relative; flex:0 0 100%;">
+        <img src="https://raw.githubusercontent.com/gonzalezreinaldo081-prog/horizon-bets-vip/main/WhatsApp%20Image%202025-10-17%20at%2016.54.43.jpeg" style="width:100%; border-radius:20px; transition:transform 3s ease;"/>
+        <div style="position:absolute; bottom:10%; left:0; right:0; color:white; font-weight:bold; text-shadow:0 0 10px black; font-size:22px;">💰 $54.457 Ganado 🔥</div>
+      </div>
+
+      <!-- IMAGEN 3 -->
+      <div style="position:relative; flex:0 0 100%;">
+        <img src="https://raw.githubusercontent.com/gonzalezreinaldo081-prog/horizon-bets-vip/main/WhatsApp%20Image%202025-10-17%20at%2016.54.44%20(2).jpeg" style="width:100%; border-radius:20px; transition:transform 3s ease;"/>
+        <div style="position:absolute; bottom:10%; left:0; right:0; color:white; font-weight:bold; text-shadow:0 0 10px black; font-size:22px;">💰 $43.843 Ganado 🔥</div>
+      </div>
+
+      <!-- IMAGEN 4 -->
+      <div style="position:relative; flex:0 0 100%;">
+        <img src="https://raw.githubusercontent.com/gonzalezreinaldo081-prog/horizon-bets-vip/main/WhatsApp%20Image%202025-10-17%20at%2016.54.45%20(1).jpeg" style="width:100%; border-radius:20px; transition:transform 3s ease;"/>
+        <div style="position:absolute; bottom:10%; left:0; right:0; color:white; font-weight:bold; text-shadow:0 0 10px black; font-size:22px;">💰 $104.199 Ganado 🔥</div>
+      </div>
+
+      <!-- IMAGEN 5 -->
+      <div style="position:relative; flex:0 0 100%;">
+        <img src="https://raw.githubusercontent.com/gonzalezreinaldo081-prog/horizon-bets-vip/main/WhatsApp%20Image%202025-10-17%20at%2016.54.47.jpeg" style="width:100%; border-radius:20px; transition:transform 3s ease;"/>
+        <div style="position:absolute; bottom:10%; left:0; right:0; color:white; font-weight:bold; text-shadow:0 0 10px black; font-size:22px;">💰 $606.999 Ganado 🔥</div>
+      </div>
+
     </div>
-    <button onclick="mover(-1)" style="position:absolute; left:0; top:50%; transform:translateY(-50%); background:rgba(0,0,0,0.6); color:white; border:none; padding:10px; cursor:pointer;">⟨</button>
-    <button onclick="mover(1)" style="position:absolute; right:0; top:50%; transform:translateY(-50%); background:rgba(0,0,0,0.6); color:white; border:none; padding:10px; cursor:pointer;">⟩</button>
   </div>
+
+  <!-- Botones de navegación -->
+  <button onclick="mover(-1)" style="position:absolute; left:5%; top:50%; transform:translateY(-50%); background:rgba(0,0,0,0.5); color:white; border:none; padding:10px; border-radius:50%; cursor:pointer;">❮</button>
+  <button onclick="mover(1)" style="position:absolute; right:5%; top:50%; transform:translateY(-50%); background:rgba(0,0,0,0.5); color:white; border:none; padding:10px; border-radius:50%; cursor:pointer;">❯</button>
+
+  <script>
+    let index = 0;
+    function mover(dir) {
+      const slides = document.getElementById('slides');
+      const total = slides.children.length;
+      index = (index + dir + total) % total;
+      slides.style.transform = `translateX(${-index * 100}%)`;
+    }
+    setInterval(() => mover(1), 4000);
+  </script>
 </section>
 
-<script>
-let index = 0;
-function mover(dir) {
-  const slides = document.getElementById('slides');
-  const total = slides.children.length;
-  index = (index + dir + total) % total;
-  slides.style.transform = `translateX(-${index * 100}%)`;
-}
-setInterval(() => mover(1), 4000);
-</script>
 
   <footer>© 2025 Horizon Bets VIP — Todos los derechos reservados.</footer>
 </body>
